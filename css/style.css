@@ -1,0 +1,312 @@
+/* ============================================================
+   EcoTrack — style.css
+   Satu file CSS untuk seluruh landing page.
+   Tiap anggota mengisi bagian yang sudah ditandai.
+   Jangan hapus komentar TODO — biarkan sampai PR di-review.
+   ============================================================ */
+
+
+/* ============================================================
+   ✏️  ANGGOTA 4 — CSS VARIABLES & RESET GLOBAL
+   Isi bagian ini PERTAMA sebelum anggota lain mulai styling,
+   supaya semua bisa pakai var(--color-primary) dll.
+   ============================================================ */
+
+:root {
+    /* TODO A4: tentukan nilai warna, font, dan spacing bersama tim */
+    --color-primary:
+        /* contoh: #16a34a */
+    ;
+    --color-accent:
+        /* contoh: #f97316 */
+    ;
+    --color-bg:
+        /* contoh: #f0fdf4 */
+    ;
+    --color-text:
+        /* contoh: #0f172a */
+    ;
+    --color-text-muted:
+        /* contoh: #64748b */
+    ;
+    --font-main:
+        /* contoh: 'Plus Jakarta Sans', sans-serif */
+    ;
+    --radius:
+        /* contoh: 12px */
+    ;
+    --spacing-lg:
+        /* contoh: 4rem */
+    ;
+    --spacing-md:
+        /* contoh: 2rem */
+    ;
+    --spacing-sm:
+        /* contoh: 1rem */
+    ;
+}
+
+/* Reset dasar — jangan diubah */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ============================================================
+   ✏️  ANGGOTA 1 — NAVBAR & HERO SECTION
+   Branch: feature/hero
+   ============================================================ */
+
+/* -- Navbar -------------------------------------------------- */
+.navbar {
+    /* TODO A1: styling navbar
+     Panduan:
+     - display: flex; justify-content: space-between; align-items: center;
+     - padding atas-bawah + kiri-kanan
+     - background warna putih atau transparan
+     - position: sticky; top: 0; agar tetap di atas saat scroll
+  */
+}
+
+.navbar .logo {
+    /* TODO A1: styling logo — font-size, font-weight, color */
+}
+
+.nav-links {
+    /* TODO A1: display: flex; gap antar item */
+}
+
+.nav-links a {
+    /* TODO A1: warna, font-size, efek hover */
+}
+
+/* -- Hero Section -------------------------------------------- */
+.hero {
+    /* TODO A1: styling layout hero
+     Panduan:
+     - display: flex; align-items: center; gap: 2rem;
+     - min-height: 90vh agar memenuhi layar
+     - padding: var(--spacing-lg) var(--spacing-md)
+  */
+}
+
+.hero-text {
+    /* TODO A1: flex: 1; display: flex; flex-direction: column; gap: 1rem; */
+}
+
+.hero-text h1 {
+    /* TODO A1: font-size besar (clamp 2rem ke 3.5rem), font-weight bold, warna primary */
+}
+
+.hero-text p {
+    /* TODO A1: font-size sedang, warna muted */
+}
+
+.hero-img {
+    /* TODO A1: flex: 1; border-radius: var(--radius); */
+}
+
+/* -- Tombol CTA (dipakai oleh semua section) ----------------- */
+.btn-primary {
+    /* TODO A1: buat styling tombol utama
+     Panduan:
+     - display: inline-block
+     - background: var(--color-primary); color: white;
+     - padding: 0.75rem 1.75rem; border-radius: var(--radius);
+     - font-weight: 600;
+     - transition: opacity .2s;
+  */
+}
+
+.btn-primary:hover {
+    /* TODO A1: opacity: .88; atau gunakan filter: brightness */
+}
+
+
+/* ============================================================
+   ✏️  ANGGOTA 2 — FEATURES SECTION
+   Branch: feature/features
+   ============================================================ */
+
+.features {
+    /* TODO A2: padding section, background alternatif (sedikit beda dari hero) */
+}
+
+.features h2 {
+    /* TODO A2: text-align: center; margin-bottom; font-size */
+}
+
+.features-grid {
+    /* TODO A2: layout 3 kolom
+     Panduan:
+     - display: flex; flex-wrap: wrap; gap: 1.5rem;
+       ATAU display: grid; grid-template-columns: repeat(3, 1fr);
+  */
+}
+
+.feature-card {
+    /* TODO A2: styling tiap card
+     Panduan:
+     - flex: 1 1 280px; (kalau pakai flex)
+     - background: white; border-radius: var(--radius);
+     - padding: var(--spacing-md);
+     - box-shadow: ringan
+  */
+}
+
+.feature-icon {
+    /* TODO A2: font-size besar (2rem), display: block; margin-bottom */
+}
+
+.feature-card h3 {
+    /* TODO A2: font-size, font-weight, margin-bottom kecil */
+}
+
+.feature-card p {
+    /* TODO A2: font-size lebih kecil, color: var(--color-text-muted) */
+}
+
+
+/* ============================================================
+   ✏️  ANGGOTA 3 — HOW IT WORKS & CTA FORM
+   Branch: feature/how-it-works
+   ============================================================ */
+
+.how-it-works {
+    /* TODO A3: padding section */
+}
+
+.how-it-works h2 {
+    /* TODO A3: text-align center, margin-bottom */
+}
+
+.steps-grid {
+    /* TODO A3: layout 3 kolom (mirip features-grid tapi untuk langkah)
+     Panduan: display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+  */
+}
+
+.step-card {
+    /* TODO A3: text-align center, padding, border atau border-top accent */
+}
+
+.step-number {
+    /* TODO A3: tampilkan nomor langkah besar
+     Panduan:
+     - font-size: 2.5rem; font-weight: 800;
+     - color: var(--color-primary); display: block;
+  */
+}
+
+/* -- CTA / Form Section ------------------------------------- */
+.cta-section {
+    /* TODO A3: background berbeda (pakai var(--color-primary) dengan opacity rendah), padding */
+}
+
+.cta-section h2 {
+    /* TODO A3: text-align center, warna, margin-bottom */
+}
+
+.cta-form {
+    /* TODO A3: layout form
+     Panduan:
+     - display: flex; flex-direction: column; gap: 0.75rem;
+     - max-width: 480px; margin: 0 auto;
+  */
+}
+
+.cta-form label {
+    /* TODO A3: font-size kecil, font-weight: 600 */
+}
+
+.cta-form input {
+    /* TODO A3: styling input
+     Panduan:
+     - padding: 0.65rem 1rem; border-radius: var(--radius);
+     - border: 1px solid #d1d5db;
+     - font-size: 1rem;
+  */
+}
+
+.cta-form input:focus {
+    /* TODO A3: outline: 2px solid var(--color-primary); outline-offset: 2px; border-color: transparent; */
+}
+
+
+/* ============================================================
+   ✏️  ANGGOTA 4 — FOOTER & MEDIA QUERIES GLOBAL
+   Branch: feature/footer-css
+   ============================================================ */
+
+/* -- Footer -------------------------------------------------- */
+.footer {
+    /* TODO A4: background gelap (#0f172a atau warna brand), color: white, padding */
+}
+
+.footer-inner {
+    /* TODO A4: display: flex; justify-content: space-between; align-items: center; */
+}
+
+.footer-links {
+    /* TODO A4: display: flex; gap: 1.5rem; */
+}
+
+.footer-links a {
+    /* TODO A4: color muted, hover: color white */
+}
+
+.footer-copy {
+    /* TODO A4: text-align center, font-size kecil, margin-top, color muted */
+}
+
+/* -- Media Queries Global ------------------------------------ */
+
+/* Tablet: max-width 768px */
+@media (max-width: 768px) {
+    /* TODO A4: ubah layout yang perlu jadi 1 kolom
+     Contoh yang perlu diubah:
+     .hero         { flex-direction: column; }
+     .features-grid{ grid-template-columns: repeat(2, 1fr); }
+     .steps-grid   { grid-template-columns: 1fr; }
+     .footer-inner { flex-direction: column; gap: 1.5rem; text-align: center; }
+  */
+}
+
+/* Mobile: max-width 480px */
+@media (max-width: 480px) {
+    /* TODO A4: penyesuaian untuk layar kecil
+     Contoh:
+     .features-grid{ grid-template-columns: 1fr; }
+     .hero-text h1 { font-size: 1.75rem; }
+     :root         { --spacing-lg: 2rem; --spacing-md: 1rem; }
+  */
+}
