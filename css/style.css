@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ============================================================
    EcoTrack — style.css
    Satu file CSS untuk seluruh landing page.
@@ -310,3 +311,95 @@ ul {
      :root         { --spacing-lg: 2rem; --spacing-md: 1rem; }
   */
 }
+=======
+:root {
+  --primary-50: #ebece7;
+  --primary-100: #d1d9ce;
+  --primary-500: #154212;
+  --secondary-500: #2d5a27;
+  --neutral-50: #f1f2f0;
+  --neutral-200: #c5c9c3;
+  --neutral-500: #72796e;
+  --neutral-900: #2f312b;
+  --surface: #fafaf5;
+  --highlight: #bcf0ae;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--neutral-900);
+  background: var(--surface);
+}
+
+.features {
+  padding: 4rem 1.25rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--secondary-500);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+#features-title {
+  margin: 0.5rem 0 0.75rem;
+  font-size: clamp(1.8rem, 2.6vw, 2.5rem);
+  color: var(--primary-500);
+}
+
+.section-description {
+  margin: 0 0 2rem;
+  max-width: 640px;
+  color: var(--neutral-500);
+  line-height: 1.6;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid var(--neutral-200);
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 18px rgba(21, 66, 18, 0.08);
+}
+
+.feature-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: var(--highlight);
+  margin-bottom: 0.9rem;
+  font-size: 1.2rem;
+}
+
+.feature-card h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.1rem;
+  color: var(--primary-500);
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--neutral-500);
+  line-height: 1.5;
+}
+>>>>>>> 5686c02 (feature: feature section)
