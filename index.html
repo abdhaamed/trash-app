@@ -1,193 +1,15 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTrack — Ubah Sampah Jadi Reward</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-    <!-- ============================================================
-    ✏️  ANGGOTA 1 — branch: feature/hero
-    TUGAS:
-      1. Buat <header> dengan navbar (logo + anchor link ke tiap section)
-      2. Buat <section id="hero"> dengan:
-           - <h1> tagline utama
-           - <p>  subheadline
-           - <a href="#cta" class="btn-primary"> CTA button
-           - <img> ilustrasi hero dengan alt yang deskriptif
-      3. Hubungkan ke style.css (class: .navbar, .hero, .btn-primary)
-      4. Setup repo GitHub + aktifkan GitHub Pages
-  ============================================================ -->
-
-    <header>
-        <nav class="navbar">
-            <!-- TODO A1: isi logo dan link navigasi -->
-            <!-- Contoh:
-      <a href="#" class="logo">♻️ EcoTrack</a>
-      <ul class="nav-links">
-        <li><a href="#features">Fitur</a></li>
-        <li><a href="#how-it-works">Cara Kerja</a></li>
-        <li><a href="#cta">Daftar</a></li>
-      </ul>
-      -->
-        </nav>
-    </header>
-
-    <main>
-
-        <section id="hero" class="hero">
-            <!-- TODO A1: isi konten hero section di sini -->
-            <!-- Struktur yang harus ada:
-        <div class="hero-text">
-          <h1>Ubah Sampah Jadi Reward</h1>
-          <p>Kumpul, pilah, dapat poin. Tukarkan dengan hadiah nyata.</p>
-          <a href="#cta" class="btn-primary">Bergabung Sekarang</a>
-        </div>
-        <img src="images/hero-illustration.png" alt="Ilustrasi platform EcoTrack" class="hero-img">
-      -->
-        </section>
-
-        <!-- ============================================================
-      ✏️  ANGGOTA 2 — branch: feature/features
-      TUGAS:
-        1. Buat <section id="features"> dengan 6 feature card
-        2. Setiap card berisi:
-             - Ikon (emoji atau karakter)
-             - <h3> nama fitur
-             - <p>  deskripsi singkat (1–2 kalimat)
-        3. CSS: layout 3 kolom desktop → 1 kolom mobile
-           gunakan class: .features-grid, .feature-card
-        4. Pakai var(--color-primary) dari style.css untuk aksen warna
-        Fitur yang harus ada:
-          📸 Upload Foto    |  ⭐ Sistem Poin    |  🎁 Redeem Reward
-          📚 Edukasi Sampah |  📍 Lapor Titik    |  🗺️ Peta Pembuangan
-    ============================================================ -->
-
-        <section id="features" class="features">
-            <!-- TODO A2: isi 6 feature card di sini -->
-            <!-- Contoh satu card:
-        <div class="features-grid">
-          <article class="feature-card">
-            <span class="feature-icon">📸</span>
-            <h3>Upload Foto</h3>
-            <p>Dokumentasikan sampah yang kamu kumpulkan sebagai bukti kontribusi nyata.</p>
-          </article>
-          ... (5 card lainnya)
-        </div>
-      -->
-        </section>
-
-        <!-- ============================================================
-      ✏️  ANGGOTA 3 — branch: feature/how-it-works
-      TUGAS:
-        1. Buat <section id="how-it-works"> dengan 3 langkah cara pakai:
-             Langkah 1: Upload foto sampah
-             Langkah 2: Kumpulkan poin
-             Langkah 3: Tukarkan reward
-        2. Buat <section id="cta"> dengan form pendaftaran:
-             - input name  (type="text",  required)
-             - input email (type="email", required)
-             - button submit
-        3. Tambahkan blok statistik dampak (angka nyata):
-             contoh: "1.200 kg", "3.400 pengguna", "500 titik terlaporkan"
-        4. CSS: .steps-grid (3 kolom), .step-card, .cta-form
-    ============================================================ -->
-
-        <section id="how-it-works" class="how-it-works">
-            <!-- TODO A3: isi 3 langkah cara kerja di sini -->
-            <!-- Contoh struktur:
-        <h2>Cara Kerja EcoTrack</h2>
-        <div class="steps-grid">
-          <div class="step-card">
-            <span class="step-number">01</span>
-            <h3>Upload Foto</h3>
-            <p>Foto sampah yang kamu kumpulkan atau pilah.</p>
-          </div>
-          <div class="step-card">
-            <span class="step-number">02</span>
-            <h3>Dapat Poin</h3>
-            <p>Sistem kami otomatis memberi poin dari setiap kontribusi.</p>
-          </div>
-          <div class="step-card">
-            <span class="step-number">03</span>
-            <h3>Tukarkan Reward</h3>
-            <p>Tukar poinmu dengan hadiah menarik dari mitra EcoTrack.</p>
-          </div>
-        </div>
-      -->
-        </section>
-
-        <section id="cta" class="cta-section">
-            <!-- TODO A3: isi form waitlist di sini -->
-            <!-- Contoh struktur:
-        <h2>Bergabung Sekarang</h2>
-        <p>Jadilah bagian dari gerakan pengelolaan sampah yang lebih baik.</p>
-        <form class="cta-form" method="POST">
-          <label for="name">Nama kamu</label>
-          <input type="text"  id="name"  name="name"  placeholder="Nama lengkap" required>
-          <label for="email">Email kamu</label>
-          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
-          <button type="submit" class="btn-primary">Daftar Gratis</button>
-        </form>
-      -->
-        </section>
-
-    </main>
-
-    <!-- ============================================================
-    ✏️  ANGGOTA 4 — branch: feature/footer-css
-    TUGAS:
-      1. Lengkapi <footer> ini:
-           - Logo + tagline singkat
-           - Link navigasi cepat (Terms, Privacy)
-           - Teks copyright
-           - Ikon sosial media (opsional)
-      2. Di css/style.css — tulis CSS Variables di :root:
-           --color-primary, --color-accent, --color-bg,
-           --color-text, --font-main, --radius, --spacing-lg
-      3. Tambahkan media queries global untuk responsivitas:
-           max-width: 768px  → tablet
-           max-width: 480px  → mobile
-      4. Setelah semua PR merged ke dev:
-           git checkout master
-           git merge dev
-           git push origin master
-      5. Final check: W3C Validator + uji tampilan di HP
-  ============================================================ -->
-
-    <footer class="footer">
-        <!-- TODO A4: isi konten footer di sini -->
-        <!-- Contoh struktur:
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <a href="#" class="logo">♻️ EcoTrack</a>
-          <p>Ubah kebiasaan. Jaga bumi.</p>
-        </div>
-        <nav class="footer-links">
-          <a href="#">Terms of Service</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Kontak</a>
-        </nav>
-      </div>
-      <p class="footer-copy">&copy; 2025 EcoTrack. All rights reserved.</p>
-    -->
-    </footer>
-
-</body>
-
-</html>
-=======
 <!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoTrack | Fitur Utama</title>
+    <title>EcoTrack | 6 Fitur Utama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -197,165 +19,255 @@
               primary: {
                 50: "#EBECE7",
                 100: "#D1D9CE",
+                200: "#A3B39F",
+                300: "#758D6F",
+                400: "#47673F",
                 500: "#154212",
+                600: "#123B10",
+                700: "#0E340D",
+                800: "#0B2D0B",
+                900: "#082608",
               },
               secondary: {
+                50: "#EBEEEA",
+                100: "#D7DDD5",
+                200: "#B0C8AA",
+                300: "#89B380",
+                400: "#627A56",
                 500: "#2D5A27",
+                600: "#285123",
+                700: "#23481F",
+                800: "#1E3F1B",
+                900: "#193617",
               },
               neutral: {
                 50: "#F1F2F0",
+                100: "#E2E4E1",
+                200: "#C5C9C3",
+                300: "#A8AEA5",
+                400: "#8C9388",
                 500: "#72796E",
+                600: "#61675D",
+                700: "#50554C",
+                800: "#3F433C",
                 900: "#2F312B",
               },
+              accent: {
+                leaf: "#3C6A00",
+                sapling: "#BCF0AE",
+              },
+              surface: {
+                parchment: "#FAFAF5",
+                bone: "#F0F0E9",
+                charcoal: "#1C1E1C",
+              },
+            },
+            fontFamily: {
+              display: ["Fraunces", "serif"],
+              body: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(188,240,174,.5), 0 25px 45px -25px rgba(11,45,11,.6)",
+            },
+            backgroundImage: {
+              mist: "radial-gradient(circle at 20% 10%, rgba(188,240,174,.35), transparent 32%), radial-gradient(circle at 85% 20%, rgba(117,141,111,.22), transparent 38%), radial-gradient(circle at 50% 80%, rgba(65,95,58,.28), transparent 40%)",
             },
           },
         },
       };
     </script>
   </head>
-  <body
-    class="min-h-screen bg-gradient-to-b from-primary-50 to-white text-neutral-900"
-  >
-    <main class="px-5 py-16 md:py-24">
-      <section id="features" aria-labelledby="features-title">
+  <body class="bg-surface-parchment font-body text-neutral-900 antialiased">
+    <main class="relative min-h-screen overflow-hidden bg-mist">
+      <div class="pointer-events-none absolute inset-0 opacity-30">
+        <div
+          class="h-full w-full bg-[linear-gradient(to_right,rgba(21,66,18,.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(21,66,18,.06)_1px,transparent_1px)] bg-[size:56px_56px]"
+        ></div>
+      </div>
+
+      <section
+        id="features"
+        aria-labelledby="features-title"
+        class="relative px-6 py-20 lg:py-24"
+      >
         <div class="mx-auto max-w-6xl">
           <p
-            class="text-xs font-bold uppercase tracking-[0.2em] text-secondary-500"
+            class="inline-flex items-center gap-2 rounded-full border border-primary-200/70 bg-white/65 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-secondary-700 backdrop-blur"
           >
-            EcoTrack
+            <span class="h-2 w-2 rounded-full bg-accent-leaf"></span>EcoTrack
           </p>
+
           <h1
             id="features-title"
-            class="mt-3 text-3xl font-extrabold leading-tight text-primary-500 md:text-5xl"
+            class="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-primary-700 md:text-6xl"
           >
             6 Fitur Utama Platform
           </h1>
+
           <p
-            class="mt-3 max-w-2xl text-base leading-relaxed text-neutral-500 md:text-lg"
+            class="mt-4 max-w-2xl text-base leading-relaxed text-neutral-700 md:text-lg"
           >
-            Solusi terintegrasi untuk meningkatkan partisipasi masyarakat dalam
-            pengelolaan sampah.
+            Untuk menjawab krisis partisipasi dan edukasi pengelolaan sampah di
+            Indonesia, EcoTrack menggabungkan dokumentasi kontribusi, sistem
+            insentif, edukasi visual, dan akses lokasi pembuangan resmi dalam
+            satu pengalaman.
           </p>
 
-          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <article
-              class="group relative overflow-hidden rounded-2xl border border-primary-100/60 bg-white/85 p-6 shadow-lg shadow-primary-500/10 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-500/20"
+              class="group relative rounded-3xl bg-gradient-to-br from-white/90 via-white/70 to-secondary-50/70 p-[1px] shadow-glow transition duration-300 hover:-translate-y-1"
             >
               <div
-                class="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-gradient-to-br from-lime-300/30 to-emerald-400/20 blur-2xl transition group-hover:scale-125"
-              ></div>
-              <div
-                class="relative mb-4 grid h-12 w-12 place-items-center rounded-xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
-                aria-hidden="true"
+                class="relative h-full rounded-3xl bg-white/90 p-6 backdrop-blur"
               >
-                📸
+                <span
+                  class="text-xs font-semibold tracking-wider text-neutral-500"
+                  >01</span
+                >
+                <div
+                  class="mt-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
+                  aria-hidden="true"
+                >
+                  📸
+                </div>
+                <h2 class="mt-4 text-xl font-semibold text-primary-700">
+                  Upload Foto Sampah
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+                  Dokumentasikan kontribusi nyata pengguna dengan bukti visual
+                  yang tercatat.
+                </p>
               </div>
-              <h2 class="relative text-lg font-semibold text-primary-500">
-                Upload Foto Sampah
-              </h2>
-              <p class="relative mt-2 text-sm leading-relaxed text-neutral-500">
-                Dokumentasi kontribusi nyata pengguna dengan bukti visual.
-              </p>
             </article>
 
             <article
-              class="group relative overflow-hidden rounded-2xl border border-primary-100/60 bg-white/85 p-6 shadow-lg shadow-primary-500/10 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-500/20"
+              class="group relative rounded-3xl bg-gradient-to-br from-white/90 via-white/70 to-secondary-50/70 p-[1px] shadow-glow transition duration-300 hover:-translate-y-1"
             >
               <div
-                class="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-gradient-to-br from-lime-300/30 to-emerald-400/20 blur-2xl transition group-hover:scale-125"
-              ></div>
-              <div
-                class="relative mb-4 grid h-12 w-12 place-items-center rounded-xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
-                aria-hidden="true"
+                class="relative h-full rounded-3xl bg-white/90 p-6 backdrop-blur"
               >
-                ⭐
+                <span
+                  class="text-xs font-semibold tracking-wider text-neutral-500"
+                  >02</span
+                >
+                <div
+                  class="mt-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
+                  aria-hidden="true"
+                >
+                  ⭐
+                </div>
+                <h2 class="mt-4 text-xl font-semibold text-primary-700">
+                  Sistem Poin
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+                  Kumpulkan poin dari setiap aktivitas pemilahan untuk
+                  memotivasi partisipasi aktif.
+                </p>
               </div>
-              <h2 class="relative text-lg font-semibold text-primary-500">
-                Sistem Poin
-              </h2>
-              <p class="relative mt-2 text-sm leading-relaxed text-neutral-500">
-                Kumpulkan poin dari setiap aktivitas pemilahan sampah.
-              </p>
             </article>
 
             <article
-              class="group relative overflow-hidden rounded-2xl border border-primary-100/60 bg-white/85 p-6 shadow-lg shadow-primary-500/10 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-500/20"
+              class="group relative rounded-3xl bg-gradient-to-br from-white/90 via-white/70 to-secondary-50/70 p-[1px] shadow-glow transition duration-300 hover:-translate-y-1"
             >
               <div
-                class="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-gradient-to-br from-lime-300/30 to-emerald-400/20 blur-2xl transition group-hover:scale-125"
-              ></div>
-              <div
-                class="relative mb-4 grid h-12 w-12 place-items-center rounded-xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
-                aria-hidden="true"
+                class="relative h-full rounded-3xl bg-white/90 p-6 backdrop-blur"
               >
-                🎁
+                <span
+                  class="text-xs font-semibold tracking-wider text-neutral-500"
+                  >03</span
+                >
+                <div
+                  class="mt-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
+                  aria-hidden="true"
+                >
+                  🎁
+                </div>
+                <h2 class="mt-4 text-xl font-semibold text-primary-700">
+                  Redeem Reward
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+                  Tukarkan poin dengan hadiah dan insentif yang memberi dampak
+                  langsung pada kebiasaan.
+                </p>
               </div>
-              <h2 class="relative text-lg font-semibold text-primary-500">
-                Redeem Reward
-              </h2>
-              <p class="relative mt-2 text-sm leading-relaxed text-neutral-500">
-                Tukarkan poin dengan hadiah dan insentif menarik.
-              </p>
             </article>
 
             <article
-              class="group relative overflow-hidden rounded-2xl border border-primary-100/60 bg-white/85 p-6 shadow-lg shadow-primary-500/10 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-500/20"
+              class="group relative rounded-3xl bg-gradient-to-br from-white/90 via-white/70 to-secondary-50/70 p-[1px] shadow-glow transition duration-300 hover:-translate-y-1"
             >
               <div
-                class="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-gradient-to-br from-lime-300/30 to-emerald-400/20 blur-2xl transition group-hover:scale-125"
-              ></div>
-              <div
-                class="relative mb-4 grid h-12 w-12 place-items-center rounded-xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
-                aria-hidden="true"
+                class="relative h-full rounded-3xl bg-white/90 p-6 backdrop-blur"
               >
-                📚
+                <span
+                  class="text-xs font-semibold tracking-wider text-neutral-500"
+                  >04</span
+                >
+                <div
+                  class="mt-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
+                  aria-hidden="true"
+                >
+                  📚
+                </div>
+                <h2 class="mt-4 text-xl font-semibold text-primary-700">
+                  Edukasi Sampah
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+                  Konten jenis sampah, cara kelola, dan dampak lingkungan dalam
+                  format yang mudah dipahami.
+                </p>
               </div>
-              <h2 class="relative text-lg font-semibold text-primary-500">
-                Edukasi Sampah
-              </h2>
-              <p class="relative mt-2 text-sm leading-relaxed text-neutral-500">
-                Pelajari jenis sampah, cara kelola, dan dampak lingkungan.
-              </p>
             </article>
 
             <article
-              class="group relative overflow-hidden rounded-2xl border border-primary-100/60 bg-white/85 p-6 shadow-lg shadow-primary-500/10 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-500/20"
+              class="group relative rounded-3xl bg-gradient-to-br from-white/90 via-white/70 to-secondary-50/70 p-[1px] shadow-glow transition duration-300 hover:-translate-y-1"
             >
               <div
-                class="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-gradient-to-br from-lime-300/30 to-emerald-400/20 blur-2xl transition group-hover:scale-125"
-              ></div>
-              <div
-                class="relative mb-4 grid h-12 w-12 place-items-center rounded-xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
-                aria-hidden="true"
+                class="relative h-full rounded-3xl bg-white/90 p-6 backdrop-blur"
               >
-                📍
+                <span
+                  class="text-xs font-semibold tracking-wider text-neutral-500"
+                  >05</span
+                >
+                <div
+                  class="mt-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
+                  aria-hidden="true"
+                >
+                  📍
+                </div>
+                <h2 class="mt-4 text-xl font-semibold text-primary-700">
+                  Lapor Titik Sampah
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+                  Pelaporan penumpukan sampah berbasis lokasi agar tindak lanjut
+                  bisa lebih cepat.
+                </p>
               </div>
-              <h2 class="relative text-lg font-semibold text-primary-500">
-                Lapor Titik Sampah
-              </h2>
-              <p class="relative mt-2 text-sm leading-relaxed text-neutral-500">
-                Laporkan penumpukan sampah berbasis lokasi secara cepat.
-              </p>
             </article>
 
             <article
-              class="group relative overflow-hidden rounded-2xl border border-primary-100/60 bg-white/85 p-6 shadow-lg shadow-primary-500/10 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-500/20"
+              class="group relative rounded-3xl bg-gradient-to-br from-white/90 via-white/70 to-secondary-50/70 p-[1px] shadow-glow transition duration-300 hover:-translate-y-1"
             >
               <div
-                class="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-gradient-to-br from-lime-300/30 to-emerald-400/20 blur-2xl transition group-hover:scale-125"
-              ></div>
-              <div
-                class="relative mb-4 grid h-12 w-12 place-items-center rounded-xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
-                aria-hidden="true"
+                class="relative h-full rounded-3xl bg-white/90 p-6 backdrop-blur"
               >
-                🗺️
+                <span
+                  class="text-xs font-semibold tracking-wider text-neutral-500"
+                  >06</span
+                >
+                <div
+                  class="mt-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-500/10 text-2xl ring-1 ring-primary-500/15"
+                  aria-hidden="true"
+                >
+                  🗺️
+                </div>
+                <h2 class="mt-4 text-xl font-semibold text-primary-700">
+                  Peta Pembuangan
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+                  Informasi lokasi dan mekanisme pembuangan resmi agar warga
+                  tahu harus ke mana.
+                </p>
               </div>
-              <h2 class="relative text-lg font-semibold text-primary-500">
-                Peta Pembuangan
-              </h2>
-              <p class="relative mt-2 text-sm leading-relaxed text-neutral-500">
-                Temukan lokasi dan mekanisme pembuangan resmi terdekat.
-              </p>
             </article>
           </div>
         </div>
@@ -363,4 +275,3 @@
     </main>
   </body>
 </html>
->>>>>>> 5686c02 (feature: feature section)
