@@ -1,180 +1,313 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTrack — Ubah Sampah Jadi Reward</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrack — Ubah Sampah Jadi Reward</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
 
-    <!-- ============================================================
-    ✏️  ANGGOTA 1 — branch: feature/hero
-    TUGAS:
-      1. Buat <header> dengan navbar (logo + anchor link ke tiap section)
-      2. Buat <section id="hero"> dengan:
-           - <h1> tagline utama
-           - <p>  subheadline
-           - <a href="#cta" class="btn-primary"> CTA button
-           - <img> ilustrasi hero dengan alt yang deskriptif
-      3. Hubungkan ke style.css (class: .navbar, .hero, .btn-primary)
-      4. Setup repo GitHub + aktifkan GitHub Pages
-  ============================================================ -->
-
-    <header>
-        <nav class="navbar">
-            <!-- TODO A1: isi logo dan link navigasi -->
-            <!-- Contoh:
-      <a href="#" class="logo">♻️ EcoTrack</a>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <span class="logo-badge">BETA</span>
+        EcoTrack
+      </a>
       <ul class="nav-links">
         <li><a href="#features">Fitur</a></li>
         <li><a href="#how-it-works">Cara Kerja</a></li>
-        <li><a href="#cta">Daftar</a></li>
+        <li><a href="#edukasi">Edukasi</a></li>
+        <li><a href="#cta" class="nav-cta">Bergabung</a></li>
       </ul>
-      -->
-        </nav>
-    </header>
+    </nav>
+  </header>
 
-    <main>
+  <main>
 
-        <section id="hero" class="hero">
-            <!-- TODO A1: isi konten hero section di sini -->
-            <!-- Struktur yang harus ada:
-        <div class="hero-text">
-          <h1>Ubah Sampah Jadi Reward</h1>
-          <p>Kumpul, pilah, dapat poin. Tukarkan dengan hadiah nyata.</p>
-          <a href="#cta" class="btn-primary">Bergabung Sekarang</a>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <div class="hero-tag anim anim-1"><span></span> Platform Pengelolaan Sampah Digital</div>
+        <h1 class="anim anim-2">Ubah Sampah<br><em>Jadi Impact.</em></h1>
+        <p class="hero-sub anim anim-3">
+          Temukan fasilitas sampah terdekat, pelajari cara pengelolaan yang benar, dan dapatkan reward untuk setiap kontribusimu bagi lingkungan.
+        </p>
+        <div class="hero-actions anim anim-4">
+          <a href="#cta" class="btn-primary">Mulai Sekarang</a>
+          <a href="#how-it-works" class="btn-outline">Pelajari Cara Kerja</a>
         </div>
-        <img src="images/hero-illustration.png" alt="Ilustrasi platform EcoTrack" class="hero-img">
-      -->
-        </section>
+      </div>
 
-        <!-- ============================================================
-      ✏️  ANGGOTA 2 — branch: feature/features
-      TUGAS:
-        1. Buat <section id="features"> dengan 6 feature card
-        2. Setiap card berisi:
-             - Ikon (emoji atau karakter)
-             - <h3> nama fitur
-             - <p>  deskripsi singkat (1–2 kalimat)
-        3. CSS: layout 3 kolom desktop → 1 kolom mobile
-           gunakan class: .features-grid, .feature-card
-        4. Pakai var(--color-primary) dari style.css untuk aksen warna
-        Fitur yang harus ada:
-          📸 Upload Foto    |  ⭐ Sistem Poin    |  🎁 Redeem Reward
-          📚 Edukasi Sampah |  📍 Lapor Titik    |  🗺️ Peta Pembuangan
-    ============================================================ -->
+      <div class="hero-visual anim anim-5">
+        <div class="hero-bg-card"></div>
 
-        <section id="features" class="features">
-            <!-- TODO A2: isi 6 feature card di sini -->
-            <!-- Contoh satu card:
-        <div class="features-grid">
-          <article class="feature-card">
-            <span class="feature-icon">📸</span>
-            <h3>Upload Foto</h3>
-            <p>Dokumentasikan sampah yang kamu kumpulkan sebagai bukti kontribusi nyata.</p>
-          </article>
-          ... (5 card lainnya)
+        <!-- decorative SVG leaf placeholder -->
+        <svg class="leaf-art" viewBox="0 0 340 420" xmlns="http://www.w3.org/2000/svg">
+          <rect width="340" height="420" rx="20" fill="#1b4d1a"/>
+          <ellipse cx="170" cy="210" rx="130" ry="160" fill="none" stroke="rgba(188,240,174,.25)" stroke-width="1.5"/>
+          <ellipse cx="170" cy="210" rx="90" ry="115" fill="none" stroke="rgba(188,240,174,.15)" stroke-width="1"/>
+          <line x1="170" y1="60" x2="170" y2="360" stroke="rgba(188,240,174,.2)" stroke-width="1.5"/>
+          <line x1="170" y1="160" x2="80" y2="120" stroke="rgba(188,240,174,.15)" stroke-width="1"/>
+          <line x1="170" y1="190" x2="260" y2="150" stroke="rgba(188,240,174,.15)" stroke-width="1"/>
+          <line x1="170" y1="220" x2="75" y2="190" stroke="rgba(188,240,174,.12)" stroke-width="1"/>
+          <line x1="170" y1="250" x2="265" y2="220" stroke="rgba(188,240,174,.12)" stroke-width="1"/>
+          <line x1="170" y1="280" x2="95" y2="260" stroke="rgba(188,240,174,.1)" stroke-width="1"/>
+          <text x="170" y="400" text-anchor="middle" fill="rgba(188,240,174,.3)" font-family="serif" font-size="11" letter-spacing="2">ECO · TRACK</text>
+        </svg>
+
+        <!-- polaroid photo card -->
+        <div class="photo-card">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" style="border-radius:6px">
+            <rect width="150" height="100" fill="#2d5a27"/>
+            <path d="M0 60 Q40 35 80 55 T150 45 L150 100 L0 100Z" fill="rgba(188,240,174,.2)"/>
+            <circle cx="115" cy="28" r="18" fill="rgba(188,240,174,.15)"/>
+            <circle cx="115" cy="28" r="10" fill="rgba(188,240,174,.25)"/>
+            <path d="M10 70 L35 45 L55 60 L75 40 L95 55 L120 35 L140 50" stroke="rgba(188,240,174,.5)" stroke-width="1.5" fill="none"/>
+          </svg>
+          <p class="photo-card-label">📸 Upload Bukti</p>
         </div>
-      -->
-        </section>
 
-        <!-- ============================================================
-      ✏️  ANGGOTA 3 — branch: feature/how-it-works
-      TUGAS:
-        1. Buat <section id="how-it-works"> dengan 3 langkah cara pakai:
-             Langkah 1: Upload foto sampah
-             Langkah 2: Kumpulkan poin
-             Langkah 3: Tukarkan reward
-        2. Buat <section id="cta"> dengan form pendaftaran:
-             - input name  (type="text",  required)
-             - input email (type="email", required)
-             - button submit
-        3. Tambahkan blok statistik dampak (angka nyata):
-             contoh: "1.200 kg", "3.400 pengguna", "500 titik terlaporkan"
-        4. CSS: .steps-grid (3 kolom), .step-card, .cta-form
-    ============================================================ -->
+        <!-- stat pill -->
+        <div class="stat-pill">
+          <strong>3.4k+</strong>
+          Pengguna Aktif
+        </div>
+      </div>
+    </section>
 
-        <section id="how-it-works" class="how-it-works">
-            <!-- TODO A3: isi 3 langkah cara kerja di sini -->
-            <!-- Contoh struktur:
-        <h2>Cara Kerja EcoTrack</h2>
+    <!-- IMPACT BANNER -->
+    <div class="impact-banner">
+      <div class="impact-inner">
+        <span class="impact-label">Dampak Nyata Kami</span>
+        <div class="impact-stats">
+          <div class="stat-item">
+            <span class="stat-num">1.2k</span>
+            <p class="stat-desc">Kg Sampah Terdokumentasi</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">3.4k</span>
+            <p class="stat-desc">Pengguna Bergabung</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <p class="stat-desc">Titik Sampah Terlaporkan</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">80+</span>
+            <p class="stat-desc">Mitra Reward</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+      <div class="section-header">
+        <span class="section-tag">Fitur Unggulan</span>
+        <h2>Semua yang Kamu<br>Butuhkan, Dalam Satu Platform</h2>
+        <p>Setiap fitur dirancang untuk membuat pengelolaan sampah lebih mudah, menyenangkan, dan bermakna.</p>
+      </div>
+
+      <div class="features-bento">
+
+        <!-- FEATURED: big card -->
+        <article class="feature-card featured">
+          <div>
+            <span class="feat-icon">⭐</span>
+            <h3>Sistem Poin & Reward</h3>
+            <p>Kumpulkan poin dari setiap kontribusi — upload foto, laporan lokasi, atau pemilahan sampah. Tukarkan dengan hadiah nyata dari mitra kami.</p>
+          </div>
+          <div class="feat-visual">🏆</div>
+        </article>
+
+        <article class="feature-card">
+          <span class="feat-icon">📸</span>
+          <h3>Upload Foto Bukti</h3>
+          <p>Dokumentasikan sampah yang kamu kumpulkan sebagai bukti kontribusi nyata yang terverifikasi sistem.</p>
+        </article>
+
+        <article class="feature-card accent-card">
+          <span class="feat-icon">🎁</span>
+          <h3>Redeem Reward</h3>
+          <p>Tukar poinmu dengan hadiah menarik, voucher, atau donasi ke program lingkungan.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feat-icon">📍</span>
+          <h3>Lapor Titik Sampah</h3>
+          <p>Laporkan lokasi penumpukan sampah di sekitarmu melalui fitur pelaporan berbasis GPS secara real-time.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feat-icon">🗺️</span>
+          <h3>Peta Pembuangan</h3>
+          <p>Temukan titik pembuangan dan fasilitas daur ulang terdekat dengan peta interaktif yang selalu diperbarui.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feat-icon">📚</span>
+          <h3>Edukasi Sampah</h3>
+          <p>Akses konten edukasi tentang jenis sampah, cara pengelolaan yang benar, dan dampak positifnya bagi lingkungan.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="how-section">
+      <div class="how-inner">
+        <span class="section-tag">Cara Kerja</span>
+        <h2>3 Langkah Mudah<br>Menuju Dampak Nyata</h2>
+
         <div class="steps-grid">
           <div class="step-card">
             <span class="step-number">01</span>
-            <h3>Upload Foto</h3>
-            <p>Foto sampah yang kamu kumpulkan atau pilah.</p>
+            <div class="step-icon">📸</div>
+            <h3>Upload Foto Sampah</h3>
+            <p>Foto sampah yang kamu kumpulkan atau pilah. Sistem kami akan memverifikasi dan mencatat kontribusimu secara otomatis.</p>
           </div>
           <div class="step-card">
             <span class="step-number">02</span>
-            <h3>Dapat Poin</h3>
-            <p>Sistem kami otomatis memberi poin dari setiap kontribusi.</p>
+            <div class="step-icon">⭐</div>
+            <h3>Kumpulkan Poin</h3>
+            <p>Setiap aktivitas — upload foto, lapor titik sampah, atau selesaikan tantangan — menghasilkan poin yang terakumulasi di akunmu.</p>
           </div>
           <div class="step-card">
             <span class="step-number">03</span>
+            <div class="step-icon">🎁</div>
             <h3>Tukarkan Reward</h3>
-            <p>Tukar poinmu dengan hadiah menarik dari mitra EcoTrack.</p>
+            <p>Redeem poinmu dengan berbagai hadiah menarik dari mitra EcoTrack: voucher belanja, pulsa, hingga donasi lingkungan.</p>
           </div>
         </div>
-      -->
-        </section>
+      </div>
+    </section>
 
-        <section id="cta" class="cta-section">
-            <!-- TODO A3: isi form waitlist di sini -->
-            <!-- Contoh struktur:
-        <h2>Bergabung Sekarang</h2>
-        <p>Jadilah bagian dari gerakan pengelolaan sampah yang lebih baik.</p>
-        <form class="cta-form" method="POST">
-          <label for="name">Nama kamu</label>
-          <input type="text"  id="name"  name="name"  placeholder="Nama lengkap" required>
-          <label for="email">Email kamu</label>
-          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
-          <button type="submit" class="btn-primary">Daftar Gratis</button>
-        </form>
-      -->
-        </section>
+    <!-- EDUCATION SECTION -->
+    <section id="edukasi" class="edu-section">
+      <div class="section-header">
+        <span class="section-tag">Edukasi & Dampak</span>
+        <h2>Kelola Sampah dengan<br>Pengetahuan yang Tepat</h2>
+        <p>Tidak hanya reward — EcoTrack hadir sebagai media edukasi berkelanjutan untuk membangun kebiasaan ramah lingkungan.</p>
+      </div>
 
-    </main>
+      <div class="edu-grid">
+        <div class="edu-primary">
+          <h3>Aktivitas & Progres Lingkunganmu</h3>
+          <p>Pantau perkembangan kontribusimu secara real-time. Lihat berapa kilogram sampah yang sudah kamu selamatkan, berapa titik yang kamu laporkan, dan dampak nyata yang telah kamu ciptakan.</p>
+          <a href="#cta" class="btn-light">Lihat Dashboard →</a>
 
-    <!-- ============================================================
-    ✏️  ANGGOTA 4 — branch: feature/footer-css
-    TUGAS:
-      1. Lengkapi <footer> ini:
-           - Logo + tagline singkat
-           - Link navigasi cepat (Terms, Privacy)
-           - Teks copyright
-           - Ikon sosial media (opsional)
-      2. Di css/style.css — tulis CSS Variables di :root:
-           --color-primary, --color-accent, --color-bg,
-           --color-text, --font-main, --radius, --spacing-lg
-      3. Tambahkan media queries global untuk responsivitas:
-           max-width: 768px  → tablet
-           max-width: 480px  → mobile
-      4. Setelah semua PR merged ke dev:
-           git checkout master
-           git merge dev
-           git push origin master
-      5. Final check: W3C Validator + uji tampilan di HP
-  ============================================================ -->
-
-    <footer class="footer">
-        <div class="footer-inner">
-            <a href="#" class="footer-logo">CURATOR</a>
-            <nav class="footer-links" aria-label="Footer navigation">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Report</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
-            </nav>
-            <p class="footer-copy">© 2026 Team 35 - Vinix7</p>
+          <!-- mini progress bar -->
+          <div style="margin-top:1.8rem;">
+            <div style="display:flex;justify-content:space-between;font-size:.75rem;margin-bottom:.35rem;color:rgba(255,255,255,.6)">
+              <span>Menuju Target Impact</span><span>72%</span>
+            </div>
+            <div style="background:rgba(255,255,255,.15);border-radius:999px;height:8px;overflow:hidden;">
+              <div style="background:var(--accent-green);width:72%;height:100%;border-radius:999px;"></div>
+            </div>
+          </div>
         </div>
-    </footer>
 
+        <div class="edu-secondary">
+          <div class="edu-card">
+            <div class="edu-card-icon">♻️</div>
+            <div>
+              <h4>Panduan Pilah Sampah</h4>
+              <p>Pelajari cara memilah sampah organik, anorganik, B3, dan limbah elektronik dengan panduan visual yang mudah dipahami.</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-icon">🌍</div>
+            <div>
+              <h4>Dampak untuk Lingkungan</h4>
+              <p>Setiap tindakanmu berkontribusi pada pengurangan emisi karbon. Lihat dampak kolektif komunitas EcoTrack.</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-icon">🏘️</div>
+            <div>
+              <h4>Pelaporan Berbasis Lokasi</h4>
+              <p>Laporkan titik penumpukan sampah di sekitarmu. Data ini digunakan pemerintah dan mitra untuk tindak lanjut nyata.</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-icon">🤝</div>
+            <div>
+              <h4>Komunitas & Tantangan</h4>
+              <p>Bergabung dalam challenge komunitas, bersaing di leaderboard, dan jadilah agen perubahan lingkungan bersama-sama.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="cta-section">
+      <div class="cta-inner">
+        <h2>Bergabung Sekarang</h2>
+        <p>Jadilah bagian dari gerakan pengelolaan sampah yang lebih baik. Daftar gratis dan mulai kumpulkan poinmu hari ini.</p>
+
+        <form class="cta-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama lengkapmu" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </div>
+          <button type="submit" class="btn-primary">Daftar Gratis — Mulai Sekarang</button>
+          <p class="cta-note">Gratis selamanya · Tidak perlu kartu kredit · Privasi terjaga</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">EcoTrack</a>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Report</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Team 35 – Vinix7</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = '✅ Berhasil Daftar! Selamat Datang 🎉';
+      btn.style.background = '#2d5a27';
+      btn.disabled = true;
+    }
+
+    // Intersection observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) {
+          el.target.style.opacity = '1';
+          el.target.style.transform = 'translateY(0)';
+          observer.unobserve(el.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.feature-card, .step-card, .edu-card, .edu-primary, .stat-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity .6s ease, transform .6s ease';
+      observer.observe(el);
+    });
+  </script>
 </body>
-
 </html>
